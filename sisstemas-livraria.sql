@@ -26,3 +26,10 @@ VALUES
 (102, 2, 'O Pequeno Príncipe'),
 (103, 3, '1984'),
 (104, 1, 'Memórias Póstumas de Brás Cubas');
+
+SELECT 
+    Clientes.nomeCliente,
+    Compras.NomeLivro
+FROM Compras
+INNER JOIN Clientes
+    ON Compras.ClienteID = Clientes.ID;
